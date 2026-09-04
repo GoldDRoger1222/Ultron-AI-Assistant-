@@ -1,0 +1,36 @@
+{
+  "name": "JARVIS — Multi-AI Agent Platform",
+  "short_name": "JARVIS",
+  "description": "Voice-First Intelligence & Autonomous Multi-AI Agent Platform with 3D Holograms and Mobile Automation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#06b6d4",
+  "orientation": "any",
+  "categories": ["productivity", "utilities", "developer"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Voice Assistant",
+      "url": "/?tab=HOME&action=voice",
+      "description": "Start Voice Assistant"
+    },
+    {
+      "name": "3D Holograms",
+      "url": "/?tab=HOLOGRAM_3D",
+      "description": "View 3D Holograms"
+    },
+    {
+      "name": "Mobile Controller",
+      "url": "/?tab=MOBILE",
+      "description": "Mobile & Hardware Automation"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0e7490" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#030712" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#22d3ee"/>
+      <stop offset="70%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </radialGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGlow)" stroke="#06b6d4" stroke-width="6" stroke-opacity="0.4"/>
+
+  <!-- Outer HUD Ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#ringGrad)" stroke-width="4" stroke-dasharray="28 14" opacity="0.6"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.4"/>
+
+  <!-- Orbital Ticks -->
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#38bdf8" stroke-width="6" stroke-dasharray="6 30" filter="url(#neonGlow)"/>
+
+  <!-- Arc Segments -->
+  <path d="M 170 170 A 120 120 0 0 1 342 170" fill="none" stroke="#a855f7" stroke-width="8" stroke-linecap="round" filter="url(#neonGlow)"/>
+  <path d="M 342 342 A 120 120 0 0 1 170 342" fill="none" stroke="#06b6d4" stroke-width="8" stroke-linecap="round" filter="url(#neonGlow)"/>
+
+  <!-- Glowing Core -->
+  <circle cx="256" cy="256" r="64" fill="url(#coreGlow)" filter="url(#neonGlow)"/>
+  <circle cx="256" cy="256" r="28" fill="#ffffff" filter="url(#neonGlow)"/>
+
+  <!-- Core Tri-Nodes -->
+  <circle cx="256" cy="180" r="10" fill="#22d3ee" filter="url(#neonGlow)"/>
+  <circle cx="190" cy="294" r="10" fill="#a855f7" filter="url(#neonGlow)"/>
+  <circle cx="322" cy="294" r="10" fill="#06b6d4" filter="url(#neonGlow)"/>
+</svg>

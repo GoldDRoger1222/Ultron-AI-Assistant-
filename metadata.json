@@ -1,0 +1,6 @@
+{
+  "name": "JARVIS — Multi-AI Agent Platform",
+  "description": "ULTRON — Deep Analysis Cognitive Core & Voice-First Intelligence System with 3D Holographic Visualization, Strict Voice Interaction Lock, 8-Stage Autonomous Pipeline, Context-Preserved Multi-AI Failover, and Natural Multilingual Voice.",
+  "requestFramePermissions": ["microphone", "camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
